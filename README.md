@@ -1,12 +1,14 @@
 # ERC725 Verify
 
+Publicly Available at: https://erc725verify.com
+
 ## Description
 
-This is a simple 3rd party utility for validating (ERC725)[https://github.com/ethereum/EIPs/blob/master/EIPS/eip-725.md] standard claims.
+This is a simple 3rd party utility for validating [ERC725](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-725.md) standard claims.
 
 ## How To Use
 
-Currently, there are just a handful of platform with deployed ERC725 identity solutions, most of which are part of the (ERC 725 Alliance)[https://erc725alliance.org/]. In order to check a claim, you need to know:
+Currently, there are just a handful of platform with deployed ERC725 identity solutions, most of which are part of the [ERC 725 Alliance](https://erc725alliance.org/). In order to check a claim, you need to know:
 
 1. The address of your ERC725 Identity Contract
 2. The address of your claim attestor ERC725 Identity Contract
@@ -18,27 +20,29 @@ Currently, there are just a handful of platform with deployed ERC725 identity so
 
 ### Your ERC-725 ID Contract
 
-If you have created an account on the (Origin Protocol Dapp)[https://dapp.originprotocol.com/#/] then you have an ERC-725 compliant identity! You can find the contract address by browsing your wallet address transactions on a block explorer like Etherscan.
+If you have created an account on the [Origin Protocol Dapp](https://dapp.originprotocol.com/#/) then you have an ERC-725 compliant identity! You can find the contract address by browsing your wallet address transactions on a block explorer like Etherscan.
 
 ### Origin's Identity Contract
 
-Since Origin has launched it's contracts on `Mainnet`, their identity contract is openly available at the address `0x1af44feeb5737736b6beb42fe8e5e6b7bb7391cd`. If you would like to confirm that this is indeed Origin's identity contract, you can do so by reading the migration logs on (Origin's public GitHub repo)[https://github.com/OriginProtocol/origin]
+Since Origin has launched it's contracts on `Mainnet`, their identity contract is openly available at the address `0x1af44feeb5737736b6beb42fe8e5e6b7bb7391cd`. If you would like to confirm that this is indeed Origin's identity contract, you can do so by reading the migration logs on [Origin's public GitHub repo](https://github.com/OriginProtocol/origin)
 
 ### Topic Code
 
 Since Origin is one of the pioneers of this standard, they have taken the liberty to set some topic codes that may or may not become a part of the standard.  Currently the codes are as follows:
 
-3. Facebook
-4. Twitter
-5. AirBnB
-10. Phone
-11. Email
+| Service  | Topic Number |
+|----------|--------------|
+| Facebook | 3            |
+| Twitter  | 4            |
+| AirBnB   | 5            |
+| Phone    | 10           |
+| Email    | 11           |
 
 ### Data
 
-You can find the data hash by inspecting the `Events` on your ERC-725 contract on a contract explorer like (Pragma)[https://withpragma.com]. Origin is currently storing attestation data in event logs to keep gas costs down (the initial contract deployment costs ~$1.50 as it is at the time of this writing). You can easily get this data in one place on Pragma
+You can find the data hash by inspecting the `Events` on your ERC-725 contract on a contract explorer like [Pragma](https://withpragma.com). Origin is currently storing attestation data in event logs to keep gas costs down (the initial contract deployment costs ~$1.50 as it is at the time of this writing). You can easily get this data in one place on Pragma
 
-(Need better explanation)
+(TODO: Need better explanation)
 
 ### Signature
 
