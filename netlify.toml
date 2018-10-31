@@ -4,5 +4,5 @@
     base = "client/"
 
 [context.production]
-    publish = "build/"
+    publish = "client/build/"
     command = "yarn build"
