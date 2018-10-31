@@ -7,7 +7,7 @@ class NetworkBadge extends Component {
 
     displayNetwork = () => {
         let net = networks.filter((n) => {
-            return n.id == this.props.network
+            return n.id === this.props.network
         })
 
         return net.length ? net[0].value : 'Custom:' + this.props.network

@@ -6,8 +6,8 @@ class Footer extends Component {
             <footer id="footer">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-6">MIT License</div>
-                        <div className="col-6 text-right">Created by: Konstantin Brazhnik</div>
+                        <div className="col-6 p-3 text-left">MIT License</div>
+                        <div className="col-6 text-right p-3">Created by: Konstantin Brazhnik</div>
                     </div>
                 </div>
             </footer>

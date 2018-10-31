@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import {
     Card,
-    CardText,
     CardBody
 } from 'reactstrap'
 
@@ -16,7 +15,7 @@ class FormContainer extends Component {
                     <Card>
                         <CardBody>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-sm-12 col-md-6">
                                 <h1>ERC 725 Verify</h1>
                                 <p>Use this utility to verify a claim placed on an ERC 725 Identity Contract.</p>
                                 <p>In order to use this utility, you will need to know:</p>
@@ -27,8 +26,8 @@ class FormContainer extends Component {
                                     <li>The data associated with that code by that attestor</li>
                                 </ul>
                             </div>
-                            <div className="col-6">
-                                <VerifyForm />
+                            <div className="col-sm-12 col-md-6">
+                                <VerifyForm web3={this.props.web3} />
                             </div>
                         </div>
                         </CardBody>

@@ -1,0 +1,7 @@
+{
+    "idAddress" : "0x1b98b6FB1aCdf4a1bDf3f9475974C9e9cAd9eE75",
+    "attestorAddress" : "0x1af44feeb5737736b6beb42fe8e5e6b7bb7391cd",
+    "claimTopic" : 5,
+    "claimData" : "0xe584561201cdb3e0178324974524477839e3999d3c5263d06814180373682691",
+    "claimSignature" : "0x83d71faf460ba87d5218c571bb2abf6c2283b05761fce4c4a908a484efd321cb68cfcd71be6f52d65bb1551c18eb089f93b77ad73be50b2c2c7b8066291e6f3d1c"
+}

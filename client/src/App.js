@@ -28,8 +28,6 @@ class App extends Component {
 
       const network = await web3.eth.net.getId();
 
-      console.log("network = ", network);
-
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
       this.setState({ web3, accounts, network });
@@ -50,7 +48,7 @@ class App extends Component {
       <div className="App">
         <Navigation network={this.state.network}/>
 
-        <FormContainer />
+        <FormContainer web3={this.state.web3}/>
 
         <Footer />
       </div>
