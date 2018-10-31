@@ -18,16 +18,11 @@ class App extends Component {
       // Use web3 to get the user's accounts.
       const accounts = await web3.eth.getAccounts();
 
-      // Get pertinent ERC 725 Contract ABI
-      // const Contract = truffleContract(SimpleStorageContract);
-      // const instance = await Contract.deployed();
-      // Contract.setProvider(web3.currentProvider);
-
 
       const network = await web3.eth.net.getId();
 
-      // Set web3, accounts, and contract to the state, and then proceed with an
-      // example of interacting with the contract's methods.
+      // Set web3, accounts, and contract to the state
+
       this.setState({ web3, accounts, network });
     } catch (error) {
       // Catch any errors for any of the above operations.
@@ -45,9 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation network={this.state.network}/>
-
         <FormContainer web3={this.state.web3}/>
-
         <Footer />
       </div>
     );
