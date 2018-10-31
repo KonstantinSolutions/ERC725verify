@@ -1,0 +1,11 @@
+{
+    "name": "erc725verify",
+    "version": "0.1.0",
+    "description": "Simple 3rd party utility for verifying claims.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JurisProject/ERC725verify"
+    },
+    "author": "Konstantin Brazhnik <konstantin@jurisproject.io>",
+    "license": "MIT"
+}
