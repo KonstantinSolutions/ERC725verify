@@ -191,7 +191,7 @@ class VerifyForm extends Component {
                         readOnly={loading} />
                 </FormGroup>
 
-                <Button className="mb-2" disabled={loading}>{loading ? buttonText.loading : buttonText.submit}</Button>
+                <Button className="mb-3" disabled={loading}>{loading ? buttonText.loading : buttonText.submit}</Button>
 
                 {
                     claim.checked ?
